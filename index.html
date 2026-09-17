@@ -65,7 +65,7 @@ section{padding:60px 7%}.section-title{text-align:center;margin-bottom:35px}
 footer{background:#222;color:white;padding:35px;text-align:center}footer p{color:#ccc;font-size:14px;margin-top:8px}
 @media(max-width:900px){.categories,.books{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.commission-cards{grid-template-columns:1fr}nav{display:none}}
 @media(max-width:550px){.categories,.books,.steps,.form-row{grid-template-columns:1fr}.hero h1{font-size:34px}.search-box{width:95%}.example-row{font-size:14px}}
-</style>.payment-box img { max-width: 150px; } </style>
+</style>
 </head>
 <body>
 
@@ -190,9 +190,7 @@ footer{background:#222;color:white;padding:35px;text-align:center}footer p{color
 <section class="payment" id="payment"><div class="section-title"><h2>💳 Rental Payment</h2><p>Pay the rental amount securely.</p></div>
 <div class="payment-box"><h3>📱 Scan & Pay</h3><div class="qr-code"><img src="images/payment-qr.png" alt="UPI Payment QR Code" onerror="this.style.display='none';this.parentElement.innerHTML='<div>QR CODE</div>'"></div>
 <p>Scan using any UPI application.</p><p class="upi">UPI ID: bookloop@upi</p><button class="purple-btn" onclick="paymentDone()">✓ Payment Done</button></div></section>
-<img src="images/IMG_20260917_002413.png" alt="Payment QR Code">
 <footer><h3>BookLoop 📚</h3><p>Rent • Read • Return</p><p>Affordable academic books for students.</p><br><p>© 2026 BookLoop</p></footer>
-
 <script>
 function rentBook(bookName,price){
 alert("🔄 Rental Selected!\n\nBook: "+bookName+"\nRental Fee: ₹"+price+" / week\n\nBookLoop commission is paid by the book owner.");
