@@ -193,9 +193,17 @@ footer{background:#222;color:white;padding:35px;text-align:center}footer p{color
 <button type="submit" class="submit-btn">📚 List My Book — FREE</button>
 </form></div></section>
 
-<section class="payment" id="payment"><div class="section-title"><h2>💳 Rental Payment</h2><p>Pay the rental amount securely.</p></div>
-<div class="payment-box"><h3>📱 Scan & Pay</h3><div class="qr-code"><img src="images/payment-qr.png" alt="UPI Payment QR Code" onerror="this.style.display='none';this.parentElement.innerHTML='<div>QR CODE</div>'"></div>
-<p>Scan using any UPI application.</p><p class="upi">UPI ID: bookloop@upi</p><button class="purple-btn" onclick="paymentDone()">✓ Payment Done</button></div></section>
+<section class="payment" id="payment">
+  <div class="payment-box">
+    <h3>📱 Scan & Pay</h3>
+    <p>Scan using any UPI application.</p>
+    <div class="qr-code">
+      <img src="images/IMG_20260917_002413.png" alt="UPI Payment QR Code">
+    </div>
+    <p class="upi">UPI ID: bookloop@upi</p>
+    <button class="purple-btn" onclick="paymentDone()">✓ Payment Done</button>
+  </div>
+</section>
   <footer><h3>BookLoop 📚</h3><p>Rent • Read • Return</p><p>Affordable academic books for students.</p><br><p>© 2026 BookLoop</p></footer>
 <script>
 function rentBook(bookName,price){
